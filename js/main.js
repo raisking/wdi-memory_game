@@ -23,7 +23,6 @@ var cards = [
 ];
 
 var cardsInPlay = [];
-
 function checkForMatch(){
 	if (cardsInPlay[0] === cardsInPlay[1]) {
       alert("You found a match!");
@@ -37,13 +36,10 @@ function flipCard() {
 	console.log(cardId);
 	cardsInPlay.push(cards[cardId].rank);
 	this.setAttribute('src', cards[cardId].cardImage);
-
-	if (cardsInPlay.length === 2){
-		checkForMatch();
-		cardsInPlay = [];
-	}
-
-
+		if (cardsInPlay.length === 2){
+			checkForMatch();
+			cardsInPlay = [];
+		}
 };
 
 function createBoard() {
@@ -57,22 +53,7 @@ function createBoard() {
   }
 }
 createBoard();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// start exercise 10
+// start exercise 11
 
 
 	
